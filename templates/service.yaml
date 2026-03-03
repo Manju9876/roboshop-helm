@@ -7,5 +7,6 @@ spec:
   selector:
     component: {{ .Values.component_name }}
   ports:
+# dgf
     - port: {{ .Values.service.port }} # service port
       targetPort: {{ .Values.service.container_port }}  # pod port
