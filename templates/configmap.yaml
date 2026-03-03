@@ -6,7 +6,3 @@ metadata:
 data:
   {{- toYaml . | nindent 2 }}
 {{- end }}
-#
-#  {{- range $key, $value := .Values.configmap_data }}
-#  {{ $key }}: {{ $value | quote }}
-#  {{- end }}
