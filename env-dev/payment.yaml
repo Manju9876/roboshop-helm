@@ -1,9 +1,5 @@
 component_name: payment
 
-service:
-  port: "8080"
-  container_port: "8080"
-
 configmap_data:
   CART_HOST: "cart-dev.devopsbymanju.shop"
   CART_PORT: "8080"

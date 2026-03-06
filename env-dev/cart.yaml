@@ -1,9 +1,5 @@
 component_name: cart
 
-service:
-  port: "8080"
-  container_port: "8080"
-
 configmap_data:
   CATALOGUE_HOST: "catalogue-dev.devopsbymanju.shop"
   CATALOGUE_PORT: "8080"
