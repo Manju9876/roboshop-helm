@@ -3,3 +3,6 @@ component_name: catalogue
 configmap_data:
   MONGO: "true"
   MONGO_URL: "mongodb://mongodb-dev.devopsbymanju.shop:27017/catalogue"
+
+schema:
+  enabled: true
