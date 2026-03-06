@@ -1,0 +1,9 @@
+component_name: shipping
+
+service:
+  port: "8080"
+  container_port: "8080"
+
+configmap_data:
+  CART_ENDPOINT: "cart-dev.devopsbymanju.shop"
+  DB_HOST: "mysql-dev.devopsbymanju.shop"
