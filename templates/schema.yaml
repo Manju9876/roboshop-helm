@@ -1,9 +1,9 @@
-{{ if $.Values.schema.enabled }}
+{{ if .Values.schema.enabled }}
 {{- range .Values.schema.jobs }}
 apiVersion: batch/v1
 kind: Job
 metadata:
-  name: {{ $.Values.component_name }}-schema
+  name: {{ $.Values.component_name }}-{{ . }
 spec:
   template:
     spec:
@@ -16,3 +16,4 @@ spec:
   backoffLimit: 4
 {{ end }}
 {{ end }}
+

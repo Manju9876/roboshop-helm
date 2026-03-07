@@ -3,6 +3,10 @@ component_name: catalogue
 configmap_data:
   MONGO: "true"
   MONGO_URL: "mongodb://mongodb-dev.devopsbymanju.shop:27017/catalogue"
+  DB_TYPE: mongo
+  APP_GIT_URL: https://github.com/roboshop-devops-project-v3/catalogue
+  DB_HOST: mongodb-dev.devopsbymanju.shop
+
 
 schema:
   enabled: true
@@ -15,5 +19,3 @@ schema_values:
       value: https://github.com/roboshop-devops-project-v3/catalogue
     - name: DB_HOST
       value: mongodb-dev.devopsbymanju.shop
-    - name: SCHEMA_FILE
-      value: db/master-data.js
