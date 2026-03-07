@@ -10,7 +10,9 @@ configmap_data:
 
 schema:
   enabled: true
+  jobs:
+    - master-data
 
 
 schema_values:
-  extension: js
+  extension: .js
