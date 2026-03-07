@@ -1,3 +1,4 @@
+{{- range .Values.schema.jobs }}
 apiVersion: v1
 kind: Service
 metadata:
@@ -7,6 +8,6 @@ spec:
   selector:
     component: {{ .Values.component_name }}
   ports:
-    - port: {{ .Values.service.port }} # service port
-      targetPort: {{ .Values.service.container_port }}  # pod port
-
+    - port: {{ .Values.service.port }}
+      targetPort: {{ .Values.service.container_port }}
+{{- end }}

@@ -1,5 +1,10 @@
 component_name: shipping
 
+schema:
+  enabled: true
+  jobs:
+    - schema
+
 configmap_data:
   CART_ENDPOINT: "cart-dev.devopsbymanju.shop"
   DB_HOST: "mysql-dev.devopsbymanju.shop"
