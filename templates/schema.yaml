@@ -3,7 +3,7 @@
 apiVersion: batch/v1
 kind: Job
 metadata:
-  name: {{ .Values.component_name }}-schema
+  name: {{ $.Values.component_name }}-schema
 spec:
   template:
     spec:
@@ -11,7 +11,7 @@ spec:
       - name: schema-load
         image: public.ecr.aws/w8x4g9h7/roboshop-v3/schema-load
         env:
-          {{- toYaml .Values.schema_values.env | nindent 10 }}
+          {{- toYaml $.Values.schema_values.env | nindent 10 }}
       restartPolicy: Never
   backoffLimit: 4
 {{ end }}
