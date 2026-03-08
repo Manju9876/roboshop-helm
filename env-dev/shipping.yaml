@@ -10,7 +10,7 @@ schema:
 
 configmap_data:
   CART_ENDPOINT: "cart-dev.devopsbymanju.shop"
-  DB_HOST: "mysql-dev.devopsbymanju.shop"
+  DB_HOST: "mysql-dev.devopsmanju.shop"
   DB_TYPE: mysql
   APP_GIT_URL: https://github.com/roboshop-devops-project-v3/shipping
   DB_USER: root
