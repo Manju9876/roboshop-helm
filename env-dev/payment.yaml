@@ -1,9 +1,9 @@
 component_name: payment
 
 configmap_data:
-  CART_HOST: "cart-dev.devopsmanju.shop"
+  CART_HOST: "cart"
   CART_PORT: "8080"
-  USER_HOST: "user-dev.devopsmanju.shop"
+  USER_HOST: "user"
   USER_PORT: "8080"
   AMQP_HOST: "rabbitmq-dev.devopsmanju.shop"
   AMQP_USER: "roboshop"
